@@ -4,7 +4,7 @@ module Devise
       module Schema
         include Devise::Schema
 
-        INDEXED_PROPERTIES = [ :email, :authentication_token, :confirmation_token, :remember_token, :reset_password_token, :unlock_token ]
+        INDEXED_PROPERTIES = [ :email, :authentication_token, :confirmation_token, :remember_token, :reset_password_token, :unlock_token, :approved, :admin ]
   
         # Tell how to apply schema methods
         def apply_devise_schema(name, type, options={})
